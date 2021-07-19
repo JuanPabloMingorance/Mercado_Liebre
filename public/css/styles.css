@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  background-color: #eac926;
+  width: 100%;
+}
+header nav {
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+header .logo {
+  width: 200px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+header .logo-search {
+  margin: 0px 0px 0px 10px;
+}
+header .search {
+  margin: 10px 0px;
+  font-size: 12px;
+  margin-left: 20px;
+}
+header .search #icono-busqueda {
+  position: absolute;
+  top: 85px;
+  left: 180px;
+  color: #666;
+}
+header .icono-hold {
+  position: absolute;
+  top: 120px;
+  left: 85px;
+}
+header .text-middle {
+  margin-left: 100px;
+  font-size: 12px;
+}
+header nav ul.navbar {
+  margin-bottom: 10px;
+}
+header nav ul.loginbar {
+  margin-bottom: 20px;
+}
+header nav ul.loginbar .id-card {
+  position: absolute;
+  top: 208px;
+  left: 80px;
+}
+header .burger {
+  background-color: #1259c3;
+  color: #ebebeb;
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0px 45%;
+}
+
+/*# sourceMappingURL=styles.css.map */
