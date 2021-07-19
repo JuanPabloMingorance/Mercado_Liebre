@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+footer section article .icon-footer {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #1259c3;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -68,6 +74,16 @@ header .burger {
   border-radius: 5px;
   text-align: center;
   margin: 0px 45%;
+}
+
+footer {
+  margin-top: 20px;
+}
+footer section {
+  text-align: center;
+}
+footer section article {
+  margin: 15px 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
