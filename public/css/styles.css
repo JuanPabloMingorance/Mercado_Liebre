@@ -25,31 +25,41 @@ header nav {
   font-size: 12px;
   padding-bottom: 10px;
 }
+header div.logo-search {
+  display: flex;
+  flex-wrap: wrap;
+}
 header .logo {
-  width: 200px;
+  width: 50%;
   padding-top: 20px;
   padding-left: 20px;
 }
-header .logo-search {
-  margin: 0px 0px 0px 10px;
+header .logo .logo img {
+  width: 50%;
 }
-header .search {
-  margin: 10px 0px;
+header .search-bar {
+  flex-grow: 0.5;
+  padding-top: 25px;
   font-size: 12px;
-  margin-left: 20px;
 }
-header .search #icono-busqueda {
+header .search-bar input {
+  margin-left: 5px;
+  width: 75%;
+}
+header .search-bar #icono-busqueda {
   position: absolute;
-  top: 85px;
-  left: 180px;
+  top: 30px;
+  left: 85%;
   color: #666;
 }
 header .icono-hold {
   position: absolute;
-  top: 120px;
-  left: 85px;
+  top: 0px;
+  left: -15px;
 }
 header .text-middle {
+  display: block;
+  position: relative;
   margin-left: 100px;
   font-size: 12px;
 }
@@ -60,6 +70,9 @@ header nav ul.navbar {
 header nav ul.loginbar {
   display: none;
   margin-bottom: 20px;
+}
+header nav ul.loginbar li {
+  position: relative;
 }
 header nav ul.loginbar .id-card {
   position: absolute;
@@ -171,6 +184,79 @@ footer section article {
     display: none;
   }
 
+  header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  header nav.navbar {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  header nav.navbar ul li {
+    list-style: none;
+  }
+  header nav.navbar ul nav.search {
+    width: 33%;
+  }
+  header nav.navbar ul nav.search i {
+    top: 3.5%;
+    left: 44%;
+    border: 1px solid black;
+    background: white;
+    padding: 3px;
+  }
+  header nav.navbar ul.loginbar {
+    padding: 0px;
+    width: 50%;
+  }
+  header nav.navbar ul.loginbar li {
+    display: inline;
+  }
+  header nav.navbar ul.navbar {
+    padding: 0px;
+    width: 50%;
+  }
+  header nav.navbar ul.navbar li {
+    display: inline;
+  }
+  header div.logo-search {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  header div.logo-search div.search-bar {
+    flex-grow: 0.33;
+  }
+  header div.logo-search .logo {
+    padding-top: 20px;
+    padding-left: 5px;
+    width: 33%;
+    flex-grow: 33%;
+  }
+  header div.logo-search .logo img {
+    width: 100%;
+  }
+  header div.logo-search div.search-bar {
+    position: relative;
+    margin-top: 0px;
+    flex-grow: 0.33;
+  }
+  header div.logo-search div.search-bar #icono-busqueda {
+    background-color: #ebebeb;
+    border: 1px solid black;
+    top: 26px;
+    left: 80%;
+    padding: 2px;
+  }
+  header div.logo-search div.search-bar input {
+    width: 75%;
+  }
+  header div.logo-search div.text-middle {
+    margin: 0px;
+  }
+
   main h3 {
     display: block;
     width: 100%;
@@ -192,7 +278,13 @@ footer section article {
   }
 }
 @media only screen and (min-width: 769px) {
+  header nav nav.navbar {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
   header nav ul.loginbar {
+    position: relative;
     display: block;
   }
   header nav ul.navbar {
