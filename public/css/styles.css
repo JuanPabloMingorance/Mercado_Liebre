@@ -88,14 +88,49 @@ main h3 {
   font-size: 24px;
   color: #666;
 }
+main section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+main section article.producto {
+  width: 100%;
+}
 
 main section article {
   margin-bottom: 10px;
 }
 
+main section article.producto strong {
+  padding-bottom: 20px;
+  color: #666;
+  font-size: 16px;
+}
+
 main section article div.info-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: relative;
   padding: 15px;
   border-top: 1px solid #ebebeb;
+}
+main section article div.info-box div.info-precio {
+  justify-content: space-around;
+  display: flex;
+}
+main section article div.info-box p.precio {
+  display: inline-block;
+  padding-right: 8px;
+  color: #666;
+  font-size: 18px;
+}
+main section article div.info-box p.off {
+  color: #39b54a;
+  font-size: 16px;
+}
+main section article div.info-box div.truck {
+  order: 1;
 }
 main section article div.info-box div.truck i {
   color: #39b54a;
@@ -136,6 +171,18 @@ footer section article {
     display: none;
   }
 
+  main h3 {
+    display: block;
+    width: 100%;
+  }
+  main section {
+    width: 100%;
+  }
+  main section article.producto {
+    width: 40%;
+    margin: 5px 10px;
+  }
+
   main section article strong {
     display: inline;
   }
@@ -153,6 +200,18 @@ footer section article {
   }
   header nav div.burger {
     display: none;
+  }
+
+  main h3 {
+    display: block;
+    width: 100%;
+  }
+  main section {
+    width: 100%;
+  }
+  main section article.producto {
+    width: 22%;
+    margin: 5px 10px;
   }
 
   main section article strong {
