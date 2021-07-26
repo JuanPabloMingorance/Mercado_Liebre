@@ -54,9 +54,11 @@ header .text-middle {
   font-size: 12px;
 }
 header nav ul.navbar {
+  display: none;
   margin-bottom: 10px;
 }
 header nav ul.loginbar {
+  display: none;
   margin-bottom: 20px;
 }
 header nav ul.loginbar .id-card {
@@ -73,7 +75,45 @@ header .burger {
   font-size: 20px;
   border-radius: 5px;
   text-align: center;
-  margin: 0px 45%;
+  margin: 7px 45%;
+}
+
+main {
+  margin: auto;
+  width: 90%;
+}
+
+main h3 {
+  margin: 5px 0;
+  font-size: 24px;
+  color: #666;
+}
+
+main section article {
+  margin-bottom: 10px;
+}
+
+main section article div.info-box {
+  padding: 15px;
+  border-top: 1px solid #ebebeb;
+}
+main section article div.info-box div.truck i {
+  color: #39b54a;
+  padding: 5px;
+  border: 1px solid #39b54a;
+  border-radius: 100%;
+}
+
+main section article div.img {
+  width: 100%;
+}
+
+main section article div.img img {
+  width: 100%;
+}
+
+main section article strong {
+  display: none;
 }
 
 footer {
@@ -84,6 +124,44 @@ footer section {
 }
 footer section article {
   margin: 15px 0;
+}
+@media only screen and (min-width: 361px) {
+  header nav ul.loginbar {
+    display: block;
+  }
+  header nav ul.navbar {
+    display: block;
+  }
+  header nav div.burger {
+    display: none;
+  }
+
+  main section article strong {
+    display: inline;
+  }
+
+  main section article.producto {
+    box-shadow: 0px 0px 10px #646464;
+  }
+}
+@media only screen and (min-width: 769px) {
+  header nav ul.loginbar {
+    display: block;
+  }
+  header nav ul.navbar {
+    display: block;
+  }
+  header nav div.burger {
+    display: none;
+  }
+
+  main section article strong {
+    display: inline;
+  }
+
+  main section article.producto {
+    box-shadow: 0px 0px 10px #646464;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
